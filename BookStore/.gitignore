@@ -1,4 +1,5 @@
 #Ignore these directories 
 packages
+BookStore/App_Data
 
 #ignore these files
