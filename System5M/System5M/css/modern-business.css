@@ -17,6 +17,35 @@ body {
  /* body padding for fixed top nav */
 }
 
+.navbar-inverse {
+    background-color: #f05f40;
+    border-color: #d14836;
+}
+
+.navbar-inverse .navbar-nav > li > a:hover, 
+.navbar-inverse .navbar-nav > li > a:focus {
+    background-color: #ff8267;
+}
+
+.navbar-inverse .navbar-nav > .open > a, 
+.navbar-inverse .navbar-nav > .open > a:hover, 
+.navbar-inverse .navbar-nav > .open > a:focus {
+    background-color: #ff8267;
+}
+
+.dropdown > .dropdown-menu {
+    background-color: #f05f40;
+    border-color: #d14836;
+}
+
+.dropdown > .dropdown-menu > li > a {
+    color: #ffffff;
+}
+
+.dropdown > .dropdown-menu > li > a:hover {
+    background-color: #ff8267;
+}
+
 .img-home-portfolio,
 .img-customer,
 .portfolio-item {

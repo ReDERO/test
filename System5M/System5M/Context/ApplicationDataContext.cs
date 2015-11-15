@@ -4,6 +4,7 @@ using System.Linq;
 using System.Web;
 using System5M.Models;
 using Microsoft.AspNet.Identity.EntityFramework;
+using System.Data.Entity;
 
 namespace System5M.Context
 {
@@ -13,6 +14,7 @@ namespace System5M.Context
             : base("DefaultConnection")
         { }
 
-        public System.Data.Entity.DbSet<AppUser> AppUsers { get; set; }
+        //public DbSet<AppUser> Users { get; set; }
+        public DbSet<Place> Places { get; set; }
     }
 }
