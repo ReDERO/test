@@ -57,6 +57,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Models\Skill.cs" />
+    <Compile Include="Models\SkillClass.cs" />
+    <Compile Include="Models\UserWishedSkill.cs" />
+    <Compile Include="Models\UserOwnedSkill.cs" />
     <Compile Include="Persistence\Configuration.cs" />
     <Compile Include="Persistence\System5MContext.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

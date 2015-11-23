@@ -18,13 +18,32 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                @Html.ActionLink("Имя приложения", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
+                @Html.ActionLink("Система 5М", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
             </div>
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
-                    <li>@Html.ActionLink("Домашняя страница", "Index", "Home")</li>
+                    <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Пространство умений <b class="caret"></b></a>
+                        <ul class="dropdown-menu" role="menu">
+                            <li>@Html.ActionLink("Список умений", "Index", "Skills")</li>
+                            <li>@Html.ActionLink("Классы умений", "Index", "SkillClasses")</li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Пространство способностей <b class="caret"></b></a>
+                        <ul class="dropdown-menu" role="menu">
+                            <li><a href="#">Список способностей</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Пространство профессий <b class="caret"></b></a>
+                        <ul class="dropdown-menu" role="menu">
+                            <li><a href="#">Список профессий</a></li>
+                        </ul>
+                    </li>
+                    <!--
                     <li>@Html.ActionLink("О программе", "About", "Home")</li>
                     <li>@Html.ActionLink("Контакт", "Contact", "Home")</li>
+                    -->
                 </ul>
                 @Html.Partial("_LoginPartial")
             </div>
